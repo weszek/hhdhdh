@@ -1,0 +1,89 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Games")
+
+local PhantomForcesWindow1 = Library:NewWindow("Credits")
+
+local KillingCheats = PhantomForcesWindow:NewSection("Games")
+
+local KillingCheats1 = PhantomForcesWindow1:NewSection("wesze_kluzek on YT")
+
+KillingCheats:CreateButton("Hotel Elephant", function()
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Hotel Elephant Fucker")
+
+local KillingCheats = PhantomForcesWindow:NewSection("Player")
+
+local KillingCheats1 = PhantomForcesWindow:NewSection("Auto")
+
+KillingCheats:CreateSlider("Speed (PC)", 0, 100, 15, false, function(value)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+
+ end)
+
+ 
+
+ KillingCheats:CreateTextbox("Speed (MOBILE)", function(text)
+
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (text)
+
+end)
+
+ 
+
+ KillingCheats1:CreateToggle("Drop some money", function(value)
+
+_G.Toggle = value
+
+while _G.Toggle do
+
+wait()
+
+game:GetService("ReplicatedStorage").MoneyRequest:FireServer(false, 999999999, "Cash")
+
+end
+
+end)
+
+end)
+
+KillingCheats:CreateButton("Prison Life", function()
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Prison life fucker")
+
+local KillingCheats = PhantomForcesWindow:NewSection("Player")
+
+local KillingCheats1 = PhantomForcesWindow:NewSection("Item Giver (Beta)")
+
+KillingCheats:CreateSlider("Speed", 0, 100, 15, false, function(value)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+
+ end)
+
+ 
+
+ KillingCheats:CreateTextbox("Speed Changer (mobile)", function(text)
+
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (text)
+
+end)
+
+KillingCheats1:CreateDropdown("DropDown", {"AK-47", "Remington 870", "M9"}, 2, function(text)
+
+workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver:FindFirstChild(text).ITEMPICKUP)
+
+end)
+
+end)
+
+KillingCheats:CreateButton("More games soon", function()
+
+print("More games soon i said")
+
+end)
